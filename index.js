@@ -1,11 +1,3 @@
-/*
-    ==================
-    Title: index.js, 
-    Author: Michael Christman
-    Date: April 9th, 2023 (updated on April 23rd, 2023)
-    Description: This is the index.js file for the pets-r-us repo and provides the background for the Pets-R-Us site. It will establish a server connection and instructing the Node.js environment what modules and files to select and how to use them.
-*/
-
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -178,8 +170,11 @@ app.post('/booking', async (req, res, next) => {
     }
   });
   
+  
+
+
   app.use((req, res, next) => {
-    res.status(404).send("Sorry, the page wasn't found")
+    res.status(404).send("Sorry, page not found")
   });
   
 app.listen(PORT, () => {
