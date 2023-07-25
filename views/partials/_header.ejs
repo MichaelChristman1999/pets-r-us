@@ -2,13 +2,21 @@
 <header>
     <div class="navigation-bar">
         <ul id="header-navigation">
-        <li><a class="navigation-link" href="https://christman-web-340-pets-r-us-project.onrender.com/">Home</a></li>
-            <li><a class="navigation-link" href="/registration">Sign Up</a></li>
-            <li><a class="navigation-link" href="/appointments">Schedule Appointments</a></li>
-            <li><a class="navigation-link" href="/customers">Customers</a></li>            
+        <a class="navigation-link" href="/home">Home</a>
+            <div class="dropdown">
+            <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/boarding">Boarding</a>
+                <a href="/grooming">Grooming</a>
+                <a href="/training">Training</a>
+            </div>
+        </div>
+            <li><a class="navigation-link" href="/customers">Customers</a></li>  
+            <li><a class="navigation-link" href="/booking">Booking</a></li>  
+            <li><a class="navigation-link" href="/my-appointments">My Appointments</a></li>
             <li><a class="navigation-link" href="/grooming">Grooming</a></li>
-            <li><a class="navigation-link" href="/boarding">Boarding</a></li>
-            <li><a class="navigation-link" href="/training">Training</a></li>
         </ul>
     </div>
 </header>
