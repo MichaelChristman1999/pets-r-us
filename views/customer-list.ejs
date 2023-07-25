@@ -1,0 +1,48 @@
+<!--Customer list main image-->
+<div class="hero-image">
+    <img src="/images/smart_dog_typing_on_computer.jpg" id="hero-image" alt="Dog with glasses typing on computer">
+    <div class="centered-5">Customers</div>
+</div>
+
+<br><br>
+<h1>Customers List</h1>
+<hr>
+<br>
+
+<br><br>
+<h1>Customer List</h1>
+<div class="card">
+    <h3 id="all-customers-list">
+        Here is a list of our loyal, satisfied customers who have volunteered their contact 
+        info as references to the exceptional quality of service you can expect at Pets-R-Us!
+    </h3>
+</div>
+<hr>
+<br>
+
+<div class="card" id="customers-list-card">
+    <% if(customers.length > 0){ %>
+    <table class="table">
+        <tr>
+            <th>Username</th>
+            <th>Email Address</th>
+        </tr>
+        <tbody>
+            <% customers.forEach(function(customer){ %>
+        <tr>
+            <td>
+                <%= customer.customerId %>
+            </td>
+            <td>
+                <%= customer.email %>
+            </td>
+        </tr>
+        <% }) %>
+        </tbody>
+    </table>
+    <% } else { %>
+        <h3 style="text-align: center; padding: 10px; font-size: 16pt; font-weight: 100;">
+            No customers have been added yet to the MongoDB database.<br>Add new customers!
+        </h3>
+        <% } %> 
+</div>

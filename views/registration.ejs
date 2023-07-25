@@ -1,0 +1,38 @@
+<!--
+    Title: registration.ejs
+    Author: Michael Christman
+    Date: April 16th, 2023 (updated on April 23rd, 2023)
+    Description: This is the registration.ejs file for the Pets-R-Us project registration page
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+<!--External stylesheet link to pets-r-us.css file -->
+        <link rel="stylesheet" href="/styles/pets-r-us.css">
+        <title>Pets-R-Us</title>
+    </head>
+    <body>
+<!--Main Training Page Image-->
+<div class="hero-image">
+    <img src="/images/smart_dog_typing_on_computer.jpg" id="hero-image" alt="Smart dog with glasses typing on computer keyboard">
+    <div class="centered-5">Registration</div>
+</div>
+<br><br>
+<h1>Registration Page Form</h1>
+<hr>
+<br>
+<!--Registration Form Section-->
+<div class="form" id="registrationForm">
+    <form action="/register" method="post">
+        <div class="registrationLabel"><label  for="customerId">Customer ID</label></div><br>
+        <input class="registrationInput" type="text" id="customerId" name="customerId"/> 
+        <br><br>
+        <div class="registrationLabel"><label for="email">Email</label></div><br>
+        <input class="registrationInput" type="text" id="email" name="email"/>
+        <br><br>
+        <button type="submit" id="btnSubmitRegistration">Register</button>
+    </form>
+</div>
+</body>
+</html>

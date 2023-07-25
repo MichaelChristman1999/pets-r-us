@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+<!--The title from the index.js file will be retrieved-->
+        <title><%- title %></title>
+
+<!--External stylesheet link for the Pets R Us Project-->
+        <link rel="stylesheet" href="/styles/pets_r_us.css">
+    </head>
+
+<!--Template for the layout of the Pets R Us app, which will include a consistent header and footer section to every page-->
+    <body>
+        <div class="container">
+            <%- include('../partials/_header.ejs') %>
+
+            <%- body %>
+            
+            <%- include('../partials/_footer.ejs') %>
+
+        </div>
+    </body>
+</html>

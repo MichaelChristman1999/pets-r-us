@@ -1,0 +1,64 @@
+
+<!--Main Grooming image-->
+<div class="main-grooming-image">
+    <img src="/images/Dog_getting_checked_at_appointment.jpg" id="main-grooming-image" alt="Appointment Book">
+    <div class="centered-7">Your Appointments</div>
+</div>
+<br><br>
+<div class="card">
+    <h1>Your Appointments</h1>
+    <h3 id="about-appointment">
+        Already Booked an Appointment? <br><br>
+        Enter your email below to see what we have on the books! 
+    </h3>
+</div>
+<div class="card">
+    <div class="form">
+    <!-- form input for email, which will be used to extract the information in the script -->
+        <div class="form-field">
+            <label id="email-label" for="email">Enter Your Email</label><br>
+            <input type="email" class="input full-width" name="email" id="email" placeholder="Email">
+        </div>
+    <!-- the search button -->
+        <div class="form-field">
+            <input type="submit" value="Search" id="search" class="btn btn-primary full-width">
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card" id="appointments">
+        <!-- data displayed here -->
+    </div>
+</div>
+
+<script>
+    // getting the search id
+      document.getElementById('search').onclick = function() {
+        // setting constant email for the id email
+        const email = document.getElementById('email').value;
+        // fetching the DB
+        fetch('/api/appointments/' + email)
+                .then(res => res.json())
+                .then(data => {
+                  // these create the header and the rows for the data
+                  let tableString = `
+                                    <div class="card"><h3 id="table-header">My Appointments</h3>
+                                            <table class="table">
+                                                <tr><th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Email</th>
+                                                    <th>Service</th></tr>`;
+                  for (let appointment of data) {
+                    tableString += `<tr><td>${appointment.firstName}</td>
+                                    <td>${appointment.lastName}</td>
+                                    <td>${appointment.email}</td>
+                                    <td>${appointment.service}</td></tr>`;
+                  }
+                  // ending the table and div
+                  tableString += `</table></div>`;
+                  // sends the data to the correct id to be displayed
+                  document.getElementById('appointments').innerHTML = tableString;
+                });
+      }
+    </script>

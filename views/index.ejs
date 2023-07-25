@@ -1,0 +1,177 @@
+<!--
+    Title: index.ejs
+    Author: Michael Christman
+    Date: April 10th, 2023
+    Description: This is the index.ejs file for the Pets-R-Us project landing page
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+<!--External stylesheet link to pets-r-us.css file -->
+        <link rel="stylesheet" href="/styles/pets-r-us.css">
+        <title>Pets-R-Us</title>
+    </head>
+
+    <body>
+        <div class="primary-container">
+
+<!--Navigation-->
+            <div class="navigation-bar">
+                <ul>
+                    <li><a class="navigation-link" href="/grooming">Grooming</a></li>
+                    <li><a class="navigation-link" href="/my-appointments">My Appointments</a></li>
+                    <li><a class="navigation-link" href="/booking">Booking</a></li>
+                    <li><a class="navigation-link" href="/customers">Customers</a></li>
+                    <li><a class="navigation-link" href="/services">Services</a>
+                        <ul class="hidden-navigation-list">
+                            <li><a class="hidden-navigation-link" href="/grooming">Grooming</a></li>
+                            <li><a class="hidden-navigation-link" href="/boarding">Boarding</a></li>
+                            <li><a class="hidden-navigation-link" href="/grooming">Training</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="navigation-link" href="/index">Home</a></li>
+                </ul>
+            </div>
+
+<!--Main Image for Landing-->
+            <div class="main-image">
+                <img src="/images/Young_woman_with_happy_pet_dog.jpg" id="young-woman-pet-dog" alt="Young woman with her pet dog">
+                <div class="center-align">Pets-R-Us</div>
+            </div>
+
+<!--About Us Card-->
+            <div class="card" id="about-us-card">
+                <h2>About Us</h2>
+                <h3 id="about-us-statement">
+                    PETs R US is a fashion-forward, ethical, and cruelty-free pet brand created by Yulia Petrus.
+
+ 
+
+Our passion is to provide exclusive designs and unrivaled quality without compromising the welfare of animals, people or the environment.  Each piece is crafted with much love and care.​
+
+ 
+
+A portion of our proceeds are donated to animal charities because we believe that no pet should ever suffer in this world.
+
+ 
+
+Our mission is to bring you thoughtfully designed dog clothing and accessories that are beautiful, functional and durable enough for everyday adventures.
+
+​
+
+Our brand is for people who love dogs and wholeheartedly believe that our four-legged friends enrich our lives.
+
+​
+
+Our customers are like our family and we love interacting with each and all of you!  Do not ever hesitate to reach out to us if you have any questions or suggestions.
+
+ 
+
+So, what are you waiting for? Browse our latest products and show your pets just how much you love them!
+                </h3>
+            </div>
+            <hr>
+
+<!--Locations Card-->
+            <div class="card" id="locations">
+                <h2 class="card-title">Locations</h2>
+                <div class="card-contents" id="midtown">
+                    <h3><b>Midtown</b></h3>
+                    <h4>
+                        420 Wells Avenue <br>
+                        Reno, NV 89502 <br>
+                        <br>
+                        <u>Hours</u> <br>
+                        Monday - Friday : 5:30am-8:00pm <br>
+                        Saturday : 7:00am-5:00pm <br>
+                        Sunday : 10:00am-3:00pm
+                    </h4>
+                </div>
+                <div class="card-contents" id="meadows">
+                    <h3><b>South Meadows</b></h3>
+                    <h4>
+                        1460 Foster Drive <br>
+                        Reno, NV 89509 <br>
+                        <br>
+                        <u>Hours</u> <br>
+                        Monday - Friday : 6:30am-8:00pm <br>
+                        Saturday : 10:00am-5:00pm <br>
+                        Sunday : Closed
+                    </h4>
+                </div>
+            </div>
+            <br>
+            <hr>
+
+<!--Pet of the Week Card-->
+            <div class="card" id="pet-of-the-week">
+                <h2 class="card-title">Pet of the Week</h2>
+                <h4>Name:</h4>
+                <p>Marco</p> <br>
+                <h4>Age:</h4>
+                <p>5 Years Old</p> <br>
+                <h4>Favorite Activity:</h4>
+                <p>Playing Frisbee with his Owner</p> <br>
+                <h4>Most Loveable Quality:</h4>
+                <p>Man's Most Loyal Companionr</p><br>
+                <div class="image-polaroid">
+                    <img src="/images/Marco_Pet_of_the_Week.png" alt="Marco the Pet of the Week Dog" id="dog-of-the-week">
+                </div>
+            </div>
+            <hr>
+
+<!--Testimonials Card-->
+            <div class="card" id="testimonials-card">
+                <h2 class="card-title">Customer Testimonials</h2>
+                <h3 id="testimonial-subheader">We normally prefer to refrain from bragging, but customers are raving about Pets-R-Us! Here are some testimonials from real customers who have recommended our shop based on their positive experiences with our plethora of guest services:</h3>
+                <div class="customer-testimonial">
+                    "We've been loyal customers of Pets-R-Us for more than a decade and we couldn't be happier with their services. 
+                    The staff at Pets-R-Us are incredibly thoughtful and considerate, and they have an amazing selection of natural, ethical
+                    products for our St. Bernard, Baxter. He's a massive giant of a dog, he is six feet tall when standing on his twos and weighs well over 200 pounds. Thus we need to feed a lot more food than regular-sized dogs. Luckily, the staff has also had us covered there with a surplus of pet supplies at their disposal. Thank you, Pets-R-Us!" - Daniel and Danielle S.
+                </div> <br> <hr>
+                <div class="customer-testimonial">
+                    "I have owned two dogs in the past. Me and my fiancee have been raising a new dog, Sammy since Ruby (the dog from my ex) has unfortunately passed on seven years ago. However, I discovered Pets R Us six years ago and we're grateful that we considered reaching out for their services (although I wish I would've found out about them sooner!). They've been responding to Sammy's needs and updating both me and my fiancee on his health.
+                    Their staff were thoughtful and amicable, showing us some dog toys and products that our boy Sammy loves. They provided bathing, grooming, and training to us for a reasonable and affordable price. I can't recommend Pets R Us highly enough!" - Adam C.
+                </div><br><hr>
+                <div class="customer-testimonial">
+                    "As a owner of a 13 year old Goldendoodle (named Santo), I remember when our family adopted Santo at the pound. He was sad and mopey when we first took him in. But since we discovered Pets-R-Us, Santo is almost always excited and cheerful. 
+                    They have a great selection of products for canines and the staff always seem happy to assist with whatever Santo needs. They treated us like they were a member of our family. Thank you
+                    Pets R Us for looking after our dog for the past 13 years!" - Ryan S.
+                </div><br><hr>
+                <div class="testimonial">
+                    "We've been longtime customers of Pets-R-Us and we couldn't imagine shopping at any other location. 
+                    The staff are always compassionate and approachable and they all genuinely care about the physical health and emotional well-being of our pets. They kept us updated on the current health of our lizard who is actually a momma who laid 8 eggs, and our dog who is also female, Roxxi This is 
+                    why we'd both highly recommend Pets-R-Us!" - Jon and Angie C.
+                </div><br><hr>
+                <div class="testimonial">
+                    "As a fundraiser with three dogs, I recently was asked to purchas new items for my dogs' to eat due to our veterinarian's proposed dietary restrictions. Unfortunately,because of my fundraising profession, I'm really busy and don't get much time to shopping compared to my boyfriend. That's where the staff at Pets-R-Us helped out us out. We made the 
+             the right choice for our pets. Their staff was extremely friendly and helped make the transition simple. Their managers and employees assisted us in finding a new food that our dogs love and also healthy for them to eat on a consistent basis. 
+                    Thank you for so much for your generosity and consideration, Pets-R-Us!" - Ann L.
+                </div>
+            </div> <br> 
+            <hr>
+
+<!--Contact Form Card-->
+            <div class="card" id="contact-form-card">
+                <p>Pets R Us organization want to help improve your pet's health and state of well-being. The Pets R Us staff are here to answer any of your questions or concerns.
+                Our cordial and professional staff are always glad to help. We are excited to hear more from you!</p>
+                <br><br><hr>
+                <form>
+                    <label for="email" id="email-label">Enter your email:</label>
+                    <input type="email" id="email-address-field" name="user-email-address">
+                    <input type="button" class="button" id="btnSubmitForm" value="SubmitForm">
+                </form>
+            </div>      
+                <hr>
+
+<!--Footer-->
+            <footer>
+                <div class="contact-information">
+                      <p>Phone: (555) 123-4567</p>
+                      <p id="owner-email-address">Email: ypetrus91@petsrus.com</p>
+                </div> 
+            </footer>
+        </div>
+    </body>
+</html>

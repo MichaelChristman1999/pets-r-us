@@ -1,0 +1,49 @@
+<!--
+    Title: appointments.ejs
+    Author: Michael Christman
+    Date: May 6th, 2023
+    Description: This is the appointments page for the WEB 340 Pets-R-Us project
+    
+<!--Main Grooming image-->
+<div class="main-grooming-image">
+    <img src="/images/dog_belly_rub_on_floor.jpg" id="main-grooming-image" alt="Dog on floor getting belly rubbed">
+    <div class="centered-6">Appointment Bookings</div>
+</div>
+<br><br>
+<h1>Book an Appointment</h1>
+<div class="card">
+    <h3 id="about-appointment">
+        Ready to get started? <br><br>
+        Fill out this form and book an appointment today with one of our Pet Specialists. 
+    </h3>
+</div>
+<hr>
+<br>
+<br>
+<!--Appointment Form-->
+<div class="form" id="appointmentForm">
+    <form action="/appointment-booked" method="post">
+        <h3 style="text-align: center; font-size: 20pt; text-decoration: underline; padding-bottom: 20px;">Appointment Form</h3>
+        <div class="appointmentLabel"><label  for="customerId">User Name</label></div><br>
+        <input class="registrationInput" type="text" id="customerId" name="customerId"/> 
+        <br><br>
+        <div class="appointmentLabel"><label for="firstName">First Name</label></div><br>
+        <input class="registrationInput" type="text" id="firstName" name="firstName"/>
+        <br><br>
+        <div class="appointmentLabel"><label for="lastName">Last Name</label></div><br>
+        <input class="registrationInput" type="text" id="lastName" name="lastName"/>
+        <br><br>
+        <div class="appointmentLabel"><label for="email">Email</label></div><br>
+        <input class="registrationInput" type="text" id="email" name="email"/>
+        <br><br><br>
+        <div class="appointmentLabel"><label for="service">Select Your Service</label></div><br>
+        <select class="drop-down-menu registrationLabel" type="text" id="service" name="service" required>
+            <% services.forEach((service) => { %>
+                <option value="'<%= service.value %>'"><%= service.text %></option>
+                <% }) %>
+
+        </select>
+        <br><br>
+        <button type="submit" id="btnSubmitRegistration">Create Appointment</button>
+    </form>
+</div>
