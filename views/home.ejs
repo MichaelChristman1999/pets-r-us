@@ -18,20 +18,7 @@
 
 <!--Navigation-->
             <div class="navigation-bar">
-                <ul>
-                    <li><a class="navigation-link" href="/grooming">Grooming</a></li>
-                    <li><a class="navigation-link" href="/my-appointments">My Appointments</a></li>
-                    <li><a class="navigation-link" href="/booking">Booking</a></li>
-                    <li><a class="navigation-link" href="/customers">Customers</a></li>
-                    <li><a class="navigation-link" href="/services">Services</a>
-                        <ul class="hidden-navigation-list">
-                            <li><a class="hidden-navigation-link" href="/grooming">Grooming</a></li>
-                            <li><a class="hidden-navigation-link" href="/boarding">Boarding</a></li>
-                            <li><a class="hidden-navigation-link" href="/grooming">Training</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="navigation-link" href="/index">Home</a></li>
-                </ul>
+                <%- include('./partials/_header.ejs') %>
             </div>
 
 <!--Main Image for Landing-->
@@ -168,8 +155,7 @@ So, what are you waiting for? Browse our latest products and show your pets just
 <!--Footer-->
             <footer>
                 <div class="contact-information">
-                      <p>Phone: (555) 123-4567</p>
-                      <p id="owner-email-address">Email: ypetrus91@petsrus.com</p>
+                <%- include('./partials/_footer.ejs') %>                     
                 </div> 
             </footer>
         </div>
