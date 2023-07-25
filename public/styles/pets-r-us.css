@@ -1,0 +1,383 @@
+/**
+    Title: pets-r-us.css
+    Author:Michael Christman 
+    Date: April 9th, 2023
+    Description: External stylesheet for the WEB 340 Pets R Us final project
+*/
+
+/* Main container and unordered list styles */
+
+.primary-container{
+    background-color:#F5F5DC;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #AECFEB;
+}
+
+#services-card{
+    list-style-type:circle;
+    margin: 10px;
+    background-color: #F5F5DC;
+    box-shadow: 0 4px 8px 0 #5B5B75;
+    transition: 0.3s;
+   
+}
+
+/* Pet services CSS styles */
+
+.pet-services{
+list-style-type:circle;
+padding: 20px;
+float: left;
+}
+
+#pet-services-menu{
+    margin-top: 50px;
+    width:30%;
+}
+
+/* Navigation section CSS styles */
+
+.hidden-navigation-list{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #F5E9E9;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden-navigation {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Image CSS styles */
+
+.main-grooming-image{
+    position: relative;
+    text-align: center;
+}
+
+.center-align-1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+}
+
+.center-align-2{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+}
+
+.center-align-3{
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:rgb(49, 43, 43);
+}
+.center-align--4{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:white;
+}
+.center-align-5{
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:white;
+}
+.center-align-6 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:white;
+}
+.center-align-7 {
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:rgb(0, 0, 0);
+}
+
+#young-woman-pet-dog{
+    width: 100%;
+}
+
+#dog-of-the-week{
+    width: 45%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 150px;
+    border: 5px solid #6e8d9c;
+    border-radius: 16px;
+}
+
+li{
+    float: right;
+}
+
+hr{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid #b3e6c9;
+}
+
+.navigation-link{
+    display: block;
+    text-decoration: none;
+    color:#692fb5;
+    text-align: center;
+    padding: 16px;
+    font-size: large;
+}
+
+.navigation-link:hover{
+    background-color: #c9bfbf;
+    color:#88b2bf;
+}
+
+.header{
+    text-align: left;
+    padding-left: 8%;
+    font-size: 84px;
+    background-color: #d3a1d4;
+}
+
+.masthead{
+    text-decoration: none;
+    color: #2e6675;
+}
+
+h3 {
+    line-height: 1.5em;
+}
+
+#subheader {
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+
+.card-contents{
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+#about-us{
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 #0c0d0d;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+#grooming-card{
+    margin-top: 115px;
+}
+
+#grooming-paragraph-section{
+    font-weight:lighter;
+    padding: 20px;
+    line-height: 1.3em;
+    letter-spacing: 2px;
+    border: 1pt solid #a64646;
+    border-radius: 24px;
+    background-color: #10eb7e;
+}
+
+#meadows{
+    float: inline-end;
+    text-align: right;
+}
+
+#midtown{
+    float: inline-start;
+}
+
+#locations{
+    margin-top: 50px;
+}
+
+#pet-of-the-week{
+    box-shadow: 0 4px 8px 0 #5c5656;
+    transition: 0.3s;
+    padding: 10px;
+    padding-left: 30px;
+    line-height:1.5em;
+    padding-bottom: 30px;
+    width: 45%;
+    margin-top: 100px;
+}
+
+#pet-of-the-week:hover{
+    box-shadow: 0 8px 16px 0 #5c5656;
+}
+
+#testimonials-card {
+    margin-top: 100px;
+    background-color: #aed0e6;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.customer-testimonial {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    width: 55%;
+    background-color: #4d8bb3;
+}
+
+#contact-information{
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    width: 55%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h4{
+    display: inline;
+}
+
+p{
+    display: inline;
+}
+
+#btnSubmitForm{
+  background-color:#044caa;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px ;
+}
+footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ed4ed3;
+    padding: 20px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(42, 55, 67);
+  }
+  .contact-info {
+    text-align: center;
+  }
+#user-email-field{
+    padding-left: 20px;
+}
+th{
+    background-color: rgb(174, 190, 203);
+}
+
+th, td {
+border: 1px solid rgb(120, 124, 153);
+padding: 10px;
+}
+
+#table-header{
+    text-align: center;
+}
+
+.form{
+    border: 1.5px solid rgb(120, 124, 153);
+    background-color: rgb(186, 202, 216);
+    border-radius: 8%;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-field{
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+#email-label {
+    letter-spacing: 1.5px;
+    line-height: 2px;
+}
+
+#search{
+    background-color: #04aaa7;
+    font-size: 11pt;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#email{
+    padding: 10px;
+    width: 40%;
+}
+tr:hover{
+    background-color: rgb(174, 190, 203);
+    cursor: pointer;
+
+}
+table{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(198, 219, 240);
+    padding: 10px;
+    border: 2px solid rgb(120, 124, 153);
+    border-collapse: collapse;
+}
+#customer-list{
+    margin-top: 50px;
+    box-shadow: 0 8px 16px 0 rgb(99, 110, 126);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 40%;
+}
