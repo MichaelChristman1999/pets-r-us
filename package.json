@@ -1,0 +1,24 @@
+{
+  "name": "pets-r-us",
+  "version": "1.0.0",
+  "description": "Pets R Us website for Web 340",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Michael R. Christman",
+  "license": "MIT",
+   "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "fs": "^0.0.1-security",
+    "mongodb": "^5.3.0",
+    "mongoose": "^6.5.0",
+    "pino": "^8.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
