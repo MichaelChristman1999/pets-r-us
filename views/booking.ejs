@@ -1,0 +1,77 @@
+<!-- 
+======================================
+; Title: Assignment 7.2: Pets-R-Us
+; Author: Professor Robert Kumar
+; Date: April 28, 2023
+; Modified By: Michael Christman
+; Description: Creating a website for Pets-R-Us
+; Sources Used: 
+; Bellevue University Web Dev GitHub: https://github.com/buwebdev/web-340/tree/master/week-4
+; Node.js Setup using Express, HTML, CSS, JS & EJS: https://www.youtube.com/watch?v=A01KtJTv1oc
+;=====================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles/site.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Pets-R-Us: Booking</title>
+</head>
+<body>
+      <!-- Calling the navigation bar -->
+      <%- include('./partials/_navbar.ejs') %>
+
+    <div>
+      <h3>Book Your Appointment</h3>
+      <br>
+      <hr> 
+      <br>
+    </div>
+
+    <div class="book-card">
+        <p>Please fill out the required fields below to book your appointment.</p>
+        <br>
+        <form action="/booking" method="post">
+          <label for="userName">User Name: </label>
+          <input type="text" id="userName" name="userName" required autofocus><br>
+          <br>
+          <label for="firstName">First Name: </label>
+          <input type="text" id="firstName" name="firstName" required><br>
+          <br>
+          <label for="lastName">Last Name: </label>
+          <input type="text" id="lastName" name="lastName" required><br>
+          <br>
+          <label for="email">Email Address: </label>
+          <input type="email" id="email" name="email" required><br>
+          <br>
+          <label for="service">Choose a Service:</label>
+          <select name="service" class="service" id="service" required>
+            <% services.forEach((service) => { %>
+            <option class="service" value="'<%= service.value %>'"><%= service.text %></option>
+            <% }) %>
+          <br>
+          <input type="submit" value="BOOK NOW">
+
+          <a href="/" class="btnCancel">CANCEL</a>
+        
+        </form>
+        
+      </div>
+
+      <br>
+<p class="motto">There is no limit to what we will do for pets because we know that pets will do anything for us too!</p>
+
+
+<!-- Calling the footer -->
+<%- include('./partials/_footer.ejs') %>
+        
+</body>
+</html>
